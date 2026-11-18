@@ -1,42 +1,66 @@
+/*type selector*/
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/*changed the order of arrangement brought .para , .small-para, then lastly the grouping*/
+
+/*class selector*/
+.para {
+  font-size: 22px;
+}
+
+/*class selector*/
+.small-para {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+
+/*grouping class selector - this doesn't matter in specificity*/
 .para,
 .small-para {
   color: hsl(0, 0%, 0%);
   font-weight: 800;
 }
 
-.small-para {
-  font-size: 14px;
-  font-weight: 800;
-}
+/*
+--use the id selector
+-- move the declarations - i think the last declaration is effected because it was declared last
+and both selectors are of class selectors
+*/
 
-.para {
-  font-size: 22px;
-}
 
-.confirm {
-  background: green;
-  color: white;
-  font-weight: bold;
-} 
-
+/*class selector*/
 .button {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
 
-.child {
-  color: rgb(0, 0, 0);
-  font-weight: 800;
-  font-size: 14px;
-}
+/*class selector*/
+.confirm {
+  background: green;
+  color: white;
+  font-weight: bold;
+} 
 
+
+
+
+
+/*chaining selector*/
 div.text {
   color: rgb(0, 0, 0);
   font-size: 22px;
   font-weight: 100;
+}
+
+/*added div and moved the declarations*/
+
+/*class selector*/
+div.child {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 14px;
 }
